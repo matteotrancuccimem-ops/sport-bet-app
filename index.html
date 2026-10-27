@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Bet Analytics Pro</title>
+    <!-- Collegamento PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen pb-20">
+
+    <!-- Header -->
+    <header class="bg-slate-900 border-b border-slate-800 p-4 sticky top-0 z-50 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <div class="bg-emerald-500 text-slate-950 p-2 rounded-xl font-black text-lg">
+                <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div>
+                <h1 class="font-bold text-lg leading-tight">BetAnalytics Pro</h1>
+                <p class="text-xs text-emerald-400 font-medium">Algoritmo & Value Bets</p>
+            </div>
+        </div>
+        <div class="bg-slate-800 px-3 py-1.5 rounded-full text-xs font-semibold border border-slate-700">
+            Bankroll: <span class="text-emerald-400">1.000 €</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="p-4 space-y-4 max-w-md mx-auto">
+        
+        <!-- Status Card -->
+        <div class="bg-gradient-to-r from-emerald-900/40 to-slate-900 border border-emerald-500/30 p-4 rounded-2xl">
+            <div class="flex justify-between items-center mb-2">
+                <span class="text-xs uppercase tracking-wider text-emerald-400 font-bold">Stato Sistema</span>
+                <span class="flex h-2 w-2 relative">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+            </div>
+            <p class="text-sm text-slate-300">Algoritmo in ascolto. Scansione quote e infortuni attiva in tempo reale.</p>
+        </div>
+
+        <!-- Filtri Sport -->
+        <div class="flex space-x-2 overflow-x-auto pb-2 scrollbar-none">
+            <button class="bg-emerald-500 text-slate-950 px-4 py-2 rounded-xl font-bold text-sm whitespace-nowrap shadow-lg shadow-emerald-500/20">Tutti</button>
+            <button class="bg-slate-900 border border-slate-800 text-slate-300 px-4 py-2 rounded-xl font-medium text-sm whitespace-nowrap">⚽ Calcio</button>
+            <button class="bg-slate-900 border border-slate-800 text-slate-300 px-4 py-2 rounded-xl font-medium text-sm whitespace-nowrap">🏀 Basket</button>
+            <button class="bg-slate-900 border border-slate-800 text-slate-300 px-4 py-2 rounded-xl font-medium text-sm whitespace-nowrap">🎾 Tennis</button>
+        </div>
+
+        <!-- Sezione Partite / Value Bets -->
+        <h2 class="text-sm font-bold text-slate-400 uppercase tracking-wider pt-2">Migliori Opportunità Oggi</h2>
+
+        <div class="space-y-3">
+            <!-- Card Partita 1 -->
+            <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-md">
+                <div class="flex justify-between items-center text-xs text-slate-400 border-b border-slate-800/60 pb-2">
+                    <span>⚽ Serie A • Oggi, 20:45</span>
+                    <span class="bg-emerald-500/10 text-emerald-400 font-bold px-2 py-0.5 rounded-md border border-emerald-500/20">EV +8.4%</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="font-bold text-base">Atalanta - Lazio</p>
+                        <p class="text-xs text-rose-400 mt-0.5"><i class="fa-solid fa-triangle-exclamation"></i> Lazio: 2 titolari assenti (difesa)</p>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-xs text-slate-400 block">Quota Equa</span>
+                        <span class="text-emerald-400 font-bold text-lg">1.75</span>
+                    </div>
+                </div>
+                <div class="bg-slate-950 p-3 rounded-xl flex justify-between items-center border border-slate-800/80">
+                    <div>
+                        <span class="text-xs text-slate-400 block">Consiglio Algoritmo</span>
+                        <span class="font-bold text-sm text-slate-200">1 (Vittoria Casa)</span>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-xs text-slate-400 block">Quota Bookmaker</span>
+                        <span class="text-amber-400 font-bold text-base">1.95</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Partita 2 -->
+            <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-md">
+                <div class="flex justify-between items-center text-xs text-slate-400 border-b border-slate-800/60 pb-2">
+                    <span>🏀 NBA • Oggi, 02:00</span>
+                    <span class="bg-emerald-500/10 text-emerald-400 font-bold px-2 py-0.5 rounded-md border border-emerald-500/20">EV +11.2%</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="font-bold text-base">Boston Celtics - Miami Heat</p>
+                        <p class="text-xs text-rose-400 mt-0.5"><i class="fa-solid fa-triangle-exclamation"></i> Heat senza top scorer</p>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-xs text-slate-400 block">Quota Equa</span>
+                        <span class="text-emerald-400 font-bold text-lg">1.45</span>
+                    </div>
+                </div>
+                <div class="bg-slate-950 p-3 rounded-xl flex justify-between items-center border border-slate-800/80">
+                    <div>
+                        <span class="text-xs text-slate-400 block">Consiglio Algoritmo</span>
+                        <span class="font-bold text-sm text-slate-200">Over 215.5 Punti</span>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-xs text-slate-400 block">Quota Bookmaker</span>
+                        <span class="text-amber-400 font-bold text-base">1.68</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-slate-900/95 backdrop-blur-md border-t border-slate-800 py-3 px-6 flex justify-around items-center z-50">
+        <button class="flex flex-col items-center text-emerald-400">
+            <i class="fa-solid fa-fire text-lg"></i>
+            <span class="text-[10px] mt-1 font-bold">Value Bets</span>
+        </button>
+        <button class="flex flex-col items-center text-slate-400 hover:text-slate-200">
+            <i class="fa-solid fa-calculator text-lg"></i>
+            <span class="text-[10px] mt-1">Simulatore</span>
+        </button>
+        <button class="flex flex-col items-center text-slate-400 hover:text-slate-200">
+            <i class="fa-solid fa-sliders text-lg"></i>
+            <span class="text-[10px] mt-1">Bankroll</span>
+        </button>
+    </nav>
+
+    <!-- Registrazione Service Worker per installazione PWA -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(reg => console.log('Service Worker registrato con successo!'))
+                    .catch(err => console.log('Errore registrazione Service Worker:', err));
+            });
+        }
+    </script>
+</body>
+</html>
