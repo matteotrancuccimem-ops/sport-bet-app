@@ -1,0 +1,17 @@
+{
+  "bankroll": 1000.0,
+  "last_update": "2026-10-27 20:30",
+  "matches": [
+    {
+      "sport": "Calcio",
+      "league": "Serie A",
+      "match": "Atalanta - Lazio",
+      "time": "Oggi, 20:45",
+      "ev": "+8.4%",
+      "fair_odds": 1.75,
+      "bookmaker_odds": 1.95,
+      "prediction": "1 (Vittoria Casa)",
+      "note": "Lazio: 2 titolari assenti (difesa)"
+    }
+  ]
+}
